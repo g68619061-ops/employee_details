@@ -1,77 +1,214 @@
 * {
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 body {
-    background-color: aquamarine;
-    font-family: "Red Hat Display", sans-serif;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100dvh;
+    font-family: sans-serif;
+}
+
+#main {
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.mycls {
+    cursor: pointer;
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-input {
-    font-family: "Red Hat Display", sans-serif;
-    margin-top: 10dvh;
-    width: 50vw;
-    height: 10dvh;
-    padding: 1vw;
-    font-size: 1vw;
-    border-radius: 0.5vw;
-    border: 0.1vw solid gray;
-}
-
-input:hover {
-    border: 0.1vw solid rgb(5, 9, 41);
-}
-
-h1 {
     text-align: center;
+    border-radius: 15px;
+    width: 30%;
+    min-height: 200px;
+    border: 1px solid black;
+    background-color: white;
+    transition: 0.3s ease;
 }
 
-button {
-    font-family: "Red Hat Display", sans-serif;
-    width: 12vw;
-    height: 4dvh;
+.mycls h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.mycls h2,
+.mycls h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.mycls:hover {
+    background-color: rgb(168, 168, 168);
+    transform: translateY(-5px);
+}
+
+#user_info {
+    position: relative;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 2VW;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 2vw 10vh 2vw;
+    background-color: rgba(162, 162, 162, 0.252);
+    width: 50%;
+}
+
+#name {
+    font-size: 5rem;
+}
+
+#address {
+    position: relative;
+    top: 2vh;
+    font-size: 3rem;
+}
+
+#profession {
+    font-size: 2rem;
+}
+
+#lifestyle {
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+}
+
+#btn {
+    cursor: pointer;
+    border: 0px;
+    position: absolute;
+    bottom: 2vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+    background-color: rgb(200, 200, 200);
+    width: 15vw;
+    height: 6vh;
 }
 
 @media only screen and (max-width:600px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
     body {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100dvh;
-        background-image: linear-gradient(220deg, rgb(155, 254, 155), skyblue, white);
+        font-family: sans-serif;
     }
 
-    input {
-        font-family: "Red Hat Display", sans-serif;
-        margin-top: 10dvh;
-        width: 70vw;
-        height: 7dvh;
-        padding: 3vw;
-        font-size: 2vw;
-        border-radius: 2vw;
-        border: 0.1vw solid gray;
-        font-size: 4vw;
-        outline: 0px;
-    }
-
-    button {
-        font-family: "Red Hat Display", sans-serif;
-        width: 18vw;
-        height: 4dvh;
-    }
-
-    #c {
+    #main {
+        font-family: "Quicksand", sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vw;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2vw;
+        background-color: rgb(255, 255, 255);
         overflow-y: auto;
-        overflow-wrap: break-word;
-        padding: 2vw 2vw;
-        width: 80vw;
-        height: 40dvh;
+    }
+
+    .mycls {
+        cursor: pointer;
+        padding: 2vw;
+        border-radius: 15px;
+        width: 90%;
+        min-height: 200px;
+        border: 1px solid black;
+        background-color: white;
+        transition: 0.3s ease;
+    }
+
+    .mycls h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .mycls h2,
+    .mycls h3 {
+        font-size: 1rem;
+        font-weight: normal;
+        color: #555;
+        margin-bottom: 5px;
+    }
+
+    .mycls:hover {
+        background-color: rgb(168, 168, 168);
+        transform: translateY(-5px);
+    }
+
+    #user_info {
+        position: relative;
+        font-family: "Quicksand", sans-serif;
+        border-radius: 2VW;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2vh 2vw 10vh 5vw;
+        background-color: rgba(162, 162, 162, 0.252);
+        width: 90%;
+    }
+
+    #name {
+        font-size: 3rem;
+    }
+
+    #address {
+        position: relative;
+        top: 2vh;
+        font-size: 2rem;
+    }
+
+    #profession {
+        font-size: 1.5rem;
+    }
+
+    #lifestyle {
+        color: rgb(58, 58, 58);
+        font-size: 1rem;
+    }
+
+    #btn {
+        cursor: pointer;
+        border: 0px;
+        position: absolute;
+        bottom: 2vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2vw;
+        background-color: rgb(200, 200, 200);
+        width: 15vw;
+        height: 6vh;
+
     }
 }
