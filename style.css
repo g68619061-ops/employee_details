@@ -284,14 +284,14 @@ body {
         cursor: pointer;
         border: 0px;
         position: fixed;
-        bottom: 5vh;
+        bottom: 1.5vh;
         display: none;
         justify-content: center;
         align-items: center;
         border-radius: 2vw;
         background-color: rgb(200, 200, 200);
-        width: 25vw;
-        height: 6vh;
+        width: 20vw;
+        height: 4vh;
 
     }
 }
