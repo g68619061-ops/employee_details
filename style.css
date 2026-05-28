@@ -172,15 +172,17 @@ body {
         display: none;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        padding: 2vh 2vw 10vh 5vw;
+        justify-content: flex-start;
+        padding: 2vh 2vw 2vh 2vw;
         background-color: rgba(162, 162, 162, 0.252);
         width: 90%;
         height: 70dvh;
         overflow-y: auto;
+        overflow-x: auto;
     }
 
     #name {
+        text-align: center;
         font-size: 3rem;
     }
 
@@ -188,15 +190,18 @@ body {
         position: relative;
         top: 2vh;
         font-size: 2rem;
+        text-align: center;
     }
 
     #profession {
         font-size: 1.5rem;
+        text-align: center;
     }
 
     #lifestyle {
         color: rgb(58, 58, 58);
         font-size: 1rem;
+        text-align: center;
     }
 
     #btn {
