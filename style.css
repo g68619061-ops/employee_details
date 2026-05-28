@@ -258,24 +258,24 @@ body {
 
     #name {
         text-align: center;
-        font-size: 3rem;
+        font-size: 15vw;
     }
 
     #address {
 
         position: relative;
         top: 2vh;
-        font-size: 2rem;
+        font-size: 5vw;
     }
 
     #profession {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 6vw;
     }
 
     #lifestyle {
         color: rgb(58, 58, 58);
-        font-size: 1rem;
+        font-size: 4vw;
     }
 
     #btn {
