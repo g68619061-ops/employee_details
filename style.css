@@ -156,6 +156,8 @@ body {
     }
 
     body {
+        overflow-y: auto;
+        background-attachment: fixed;
         display: flex;
         justify-content: center;
         align-items: center;
