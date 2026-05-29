@@ -8,7 +8,6 @@ let showInfo3 = document.querySelector("#lifestyle");
 let main_user_info = document.querySelector("#user_info");
 let btn = document.querySelector("#btn");
 
-
 let user_info = {
     name: "<b>Oliver Smith</b>",
     address: "24 Maple Street, London, EC1A 1BB, UK<br><br>",
